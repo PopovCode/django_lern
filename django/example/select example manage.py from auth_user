@@ -1,0 +1,15 @@
+                    List of relations
+ Schema |            Name            | Type  |   Owner    
+--------+----------------------------+-------+------------
+ public | auth_group                 | table | djangouser
+ public | auth_group_permissions     | table | djangouser
+ public | auth_permission            | table | djangouser
+ public | auth_user                  | table | djangouser
+ public | auth_user_groups           | table | djangouser
+ public | auth_user_user_permissions | table | djangouser
+ public | django_admin_log           | table | djangouser
+ public | django_content_type        | table | djangouser
+ public | django_migrations          | table | djangouser
+ public | django_session             | table | djangouser
+(10 rows)
+
