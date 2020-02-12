@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Наш магазин{% endblock %}</title>
+</head>
+<body>
+    <!-- Main menu -->
+    <table>
+        <tr><a href="{% url 'home:index' %}">Начало</a></tr>
+        <tr><a href="{% url 'tovar:index' %}">Товары</a></tr>
+    </table>
+    <!-- End of Main menu -->
+    
+    <!-- Main title -->
+    <h1>{% block header %}Наш крутой магазин{% endblock %}</h1>
+    <!-- End of Main title -->
+
+    <div id="contents">
+    <!-- Contents -->
+    {% block contents %}
+        <p>Добро пожаловать</p>
+    {% endblock %}
+    <!-- End of contents -->
+    </div>
+</body>
+</html>

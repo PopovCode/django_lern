@@ -1,0 +1,21 @@
+{% extends 'generic.html' %}
+
+{% block title %}Список товаров{% endblock %}
+{%block header %}Список товаров{% endblock%}
+
+{% block contents %}
+    <table border="1">
+        <tr>
+            <th>Артикул</th>
+            <th>Наименование</th>
+            <th>Наличие</th>
+        </tr>
+        {% for t in all_tovars %}
+        <tr>
+            <td>{{t.article}}</td>
+            <td>{{t.title}}</td>
+            <td>{{t.quantity}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
